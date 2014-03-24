@@ -1,0 +1,12 @@
+#JSGF V1.0 UTF-8;
+
+/**
+ * JSGF Grammar
+ */
+grammar com.sogeti.labs.baragwuin;
+
+public <publicCommands> = ( <commands> <windowsApps> ) | <exitCommands> | help;
+
+<commands> = open | launch | start;
+<exitCommands> = quit;
+<windowsApps> = internet | mail;
